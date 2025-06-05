@@ -40,6 +40,7 @@ privileges, account for editing suitable databases)
 
 config.ini explanation [source] section is required for setup the proper connection to the database. 
 You can provide an user and password to the database, host name and database name 
+
 [destination_ip] This section introduces the possibility of getting some data from specific IP address ( 
 for example in local network ). In addition with section [temp_page] you can specify the parent 
 element of html layout and id of child element. 
