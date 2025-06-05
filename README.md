@@ -29,19 +29,25 @@ thermometer.
 introduced new configuration options. Basic usage instructions were documented.
 ____________________________________
 #default 
+
 User manual 
+
 Ubuntu: User:pass = fit:alice User:pass = root:1111 
+
 Database http://localhost/phpmyadmin User:pass (privileges) = phpmyadmin:root (all privileges, non 
 grant) User:pass (privileges) = root:1111 (all privileges + grant) User:pass (privileges) = fit:alice (~half 
 privileges, account for editing suitable databases) 
+
 config.ini explanation [source] section is required for setup the proper connection to the database. 
 You can provide an user and password to the database, host name and database name 
 [destination_ip] This section introduces the possibility of getting some data from specific IP address ( 
 for example in local network ). In addition with section [temp_page] you can specify the parent 
 element of html layout and id of child element. 
+
 [interval] This section is slightly important. You can provide the maximul interval time (in days) the 
 data in database is held. If yolu give e.g. number 1, one day data from actual time (if program is 
 running) will be deleted. It calculates the interval within now and time in stored in database. 
+
 Useful commands (Ubuntu) To on/off bluetooth: sudo rfkill toogle Bluetooth To restart/stop/start 
 daemon: sudo systemctl restart/start/stop EnvironmentRackControl.service 
 ____________________________________
